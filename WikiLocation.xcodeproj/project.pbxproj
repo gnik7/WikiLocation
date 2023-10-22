@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB314A652AE0504900C0B1BC /* LocationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB314A642AE0504900C0B1BC /* LocationsRequest.swift */; };
+		DB314A692AE054BC00C0B1BC /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB314A682AE054BC00C0B1BC /* LocationsView.swift */; };
+		DB314A6B2AE054D000C0B1BC /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB314A6A2AE054D000C0B1BC /* LocationRow.swift */; };
+		DB314A6D2AE056F200C0B1BC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB314A6C2AE056F200C0B1BC /* RequestManager.swift */; };
+		DB4DB96E2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */; };
+		DBA36E182AE53D7500573287 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36E172AE53D7500573287 /* MapView.swift */; };
+		DBA36E1B2AE53FB700573287 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36E1A2AE53FB700573287 /* LocationManager.swift */; };
+		DBA36E1D2AE541A300573287 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36E1C2AE541A300573287 /* RequestLocationView.swift */; };
+		DBB29BBE2ADFD95C007561F3 /* WikiLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BBD2ADFD95C007561F3 /* WikiLocationApp.swift */; };
+		DBB29BC02ADFD95C007561F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BBF2ADFD95C007561F3 /* ContentView.swift */; };
+		DBB29BC22ADFD95E007561F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB29BC12ADFD95E007561F3 /* Assets.xcassets */; };
+		DBB29BC52ADFD95E007561F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB29BC42ADFD95E007561F3 /* Preview Assets.xcassets */; };
+		DBB29BCF2ADFD95F007561F3 /* WikiLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BCE2ADFD95F007561F3 /* WikiLocationTests.swift */; };
+		DBB29BD92ADFD95F007561F3 /* WikiLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BD82ADFD95F007561F3 /* WikiLocationUITests.swift */; };
+		DBB29BDB2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BDA2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift */; };
+		DBB29BEE2ADFDB48007561F3 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BED2ADFDB48007561F3 /* LocationItem.swift */; };
+		DBB29BF02ADFDB5D007561F3 /* LocationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BEF2ADFDB5D007561F3 /* LocationContainer.swift */; };
+		DBB29BF32ADFDD7C007561F3 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BF22ADFDD7C007561F3 /* DataParser.swift */; };
+		DBB29BF72ADFDEC7007561F3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BF62ADFDEC7007561F3 /* NetworkError.swift */; };
+		DBB29BF92ADFDF03007561F3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BF82ADFDF03007561F3 /* APIManager.swift */; };
+		DBB29BFC2ADFDF7E007561F3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BFB2ADFDF7E007561F3 /* RequestProtocol.swift */; };
+		DBB29BFE2ADFDFC4007561F3 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BFD2ADFDFC4007561F3 /* RequestType.swift */; };
+		DBB29C002ADFE104007561F3 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BFF2ADFE104007561F3 /* APIConstants.swift */; };
+		DBDE9BED2AE3CF820032C9CA /* LocationsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDE9BEC2AE3CF820032C9CA /* LocationsViewViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBB29BCB2ADFD95F007561F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB29BB22ADFD95C007561F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB29BB92ADFD95C007561F3;
+			remoteInfo = WikiLocation;
+		};
+		DBB29BD52ADFD95F007561F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB29BB22ADFD95C007561F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB29BB92ADFD95C007561F3;
+			remoteInfo = WikiLocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB314A642AE0504900C0B1BC /* LocationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRequest.swift; sourceTree = "<group>"; };
+		DB314A682AE054BC00C0B1BC /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		DB314A6A2AE054D000C0B1BC /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
+		DB314A6C2AE056F200C0B1BC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationDeepLinkUrlTest.swift; sourceTree = "<group>"; };
+		DBA36E172AE53D7500573287 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DBA36E192AE53DC100573287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DBA36E1A2AE53FB700573287 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DBA36E1C2AE541A300573287 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
+		DBB29BBA2ADFD95C007561F3 /* WikiLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB29BBD2ADFD95C007561F3 /* WikiLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationApp.swift; sourceTree = "<group>"; };
+		DBB29BBF2ADFD95C007561F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBB29BC12ADFD95E007561F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB29BC42ADFD95E007561F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBB29BCA2ADFD95F007561F3 /* WikiLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB29BCE2ADFD95F007561F3 /* WikiLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationTests.swift; sourceTree = "<group>"; };
+		DBB29BD42ADFD95F007561F3 /* WikiLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB29BD82ADFD95F007561F3 /* WikiLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationUITests.swift; sourceTree = "<group>"; };
+		DBB29BDA2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBB29BED2ADFDB48007561F3 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		DBB29BEF2ADFDB5D007561F3 /* LocationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationContainer.swift; sourceTree = "<group>"; };
+		DBB29BF22ADFDD7C007561F3 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		DBB29BF62ADFDEC7007561F3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DBB29BF82ADFDF03007561F3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DBB29BFB2ADFDF7E007561F3 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		DBB29BFD2ADFDFC4007561F3 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		DBB29BFF2ADFE104007561F3 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		DBDE9BEC2AE3CF820032C9CA /* LocationsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBB29BB72ADFD95C007561F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB29BC72ADFD95F007561F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB29BD12ADFD95F007561F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB314A632AE0502400C0B1BC /* location */ = {
+			isa = PBXGroup;
+			children = (
+				DB314A642AE0504900C0B1BC /* LocationsRequest.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		DB314A662AE053E700C0B1BC /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				DB314A672AE0540500C0B1BC /* views */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		DB314A672AE0540500C0B1BC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DBA36E152AE53D0500573287 /* main */,
+				DBA36E162AE53D0C00573287 /* map */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DBA36E152AE53D0500573287 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				DB314A682AE054BC00C0B1BC /* LocationsView.swift */,
+				DB314A6A2AE054D000C0B1BC /* LocationRow.swift */,
+				DBDE9BEC2AE3CF820032C9CA /* LocationsViewViewModel.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		DBA36E162AE53D0C00573287 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				DBA36E172AE53D7500573287 /* MapView.swift */,
+				DBA36E1C2AE541A300573287 /* RequestLocationView.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		DBB29BB12ADFD95C007561F3 = {
+			isa = PBXGroup;
+			children = (
+				DBB29BBC2ADFD95C007561F3 /* WikiLocation */,
+				DBB29BCD2ADFD95F007561F3 /* WikiLocationTests */,
+				DBB29BD72ADFD95F007561F3 /* WikiLocationUITests */,
+				DBB29BBB2ADFD95C007561F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB29BBB2ADFD95C007561F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BBA2ADFD95C007561F3 /* WikiLocation.app */,
+				DBB29BCA2ADFD95F007561F3 /* WikiLocationTests.xctest */,
+				DBB29BD42ADFD95F007561F3 /* WikiLocationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBB29BBC2ADFD95C007561F3 /* WikiLocation */ = {
+			isa = PBXGroup;
+			children = (
+				DBA36E192AE53DC100573287 /* Info.plist */,
+				DBB29BE72ADFDA67007561F3 /* Core */,
+				DB314A662AE053E700C0B1BC /* Locations */,
+				DBB29BBD2ADFD95C007561F3 /* WikiLocationApp.swift */,
+				DBB29BBF2ADFD95C007561F3 /* ContentView.swift */,
+				DBB29BC12ADFD95E007561F3 /* Assets.xcassets */,
+				DBB29BC32ADFD95E007561F3 /* Preview Content */,
+			);
+			path = WikiLocation;
+			sourceTree = "<group>";
+		};
+		DBB29BC32ADFD95E007561F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BC42ADFD95E007561F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBB29BCD2ADFD95F007561F3 /* WikiLocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BCE2ADFD95F007561F3 /* WikiLocationTests.swift */,
+				DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */,
+			);
+			path = WikiLocationTests;
+			sourceTree = "<group>";
+		};
+		DBB29BD72ADFD95F007561F3 /* WikiLocationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BD82ADFD95F007561F3 /* WikiLocationUITests.swift */,
+				DBB29BDA2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift */,
+			);
+			path = WikiLocationUITests;
+			sourceTree = "<group>";
+		};
+		DBB29BE72ADFDA67007561F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BEA2ADFDA8F007561F3 /* data */,
+				DBB29BE82ADFDA76007561F3 /* domain */,
+				DBB29BE92ADFDA86007561F3 /* utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DBB29BE82ADFDA76007561F3 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BEB2ADFDAA1007561F3 /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		DBB29BE92ADFDA86007561F3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DBA36E1A2AE53FB700573287 /* LocationManager.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		DBB29BEA2ADFDA8F007561F3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BF52ADFDE5A007561F3 /* request */,
+				DBB29BF42ADFDE4C007561F3 /* network */,
+				DBB29BF12ADFDD65007561F3 /* parser */,
+				DBB29BFF2ADFE104007561F3 /* APIConstants.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		DBB29BEB2ADFDAA1007561F3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BEC2ADFDAB5007561F3 /* location */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DBB29BEC2ADFDAB5007561F3 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BEF2ADFDB5D007561F3 /* LocationContainer.swift */,
+				DBB29BED2ADFDB48007561F3 /* LocationItem.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		DBB29BF12ADFDD65007561F3 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BF22ADFDD7C007561F3 /* DataParser.swift */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		DBB29BF42ADFDE4C007561F3 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				DBB29BF62ADFDEC7007561F3 /* NetworkError.swift */,
+				DBB29BF82ADFDF03007561F3 /* APIManager.swift */,
+				DB314A6C2AE056F200C0B1BC /* RequestManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		DBB29BF52ADFDE5A007561F3 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				DB314A632AE0502400C0B1BC /* location */,
+				DBB29BFB2ADFDF7E007561F3 /* RequestProtocol.swift */,
+				DBB29BFD2ADFDFC4007561F3 /* RequestType.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBB29BB92ADFD95C007561F3 /* WikiLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB29BDE2ADFD95F007561F3 /* Build configuration list for PBXNativeTarget "WikiLocation" */;
+			buildPhases = (
+				DBB29BB62ADFD95C007561F3 /* Sources */,
+				DBB29BB72ADFD95C007561F3 /* Frameworks */,
+				DBB29BB82ADFD95C007561F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiLocation;
+			productName = WikiLocation;
+			productReference = DBB29BBA2ADFD95C007561F3 /* WikiLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBB29BC92ADFD95F007561F3 /* WikiLocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB29BE12ADFD95F007561F3 /* Build configuration list for PBXNativeTarget "WikiLocationTests" */;
+			buildPhases = (
+				DBB29BC62ADFD95F007561F3 /* Sources */,
+				DBB29BC72ADFD95F007561F3 /* Frameworks */,
+				DBB29BC82ADFD95F007561F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB29BCC2ADFD95F007561F3 /* PBXTargetDependency */,
+			);
+			name = WikiLocationTests;
+			productName = WikiLocationTests;
+			productReference = DBB29BCA2ADFD95F007561F3 /* WikiLocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBB29BD32ADFD95F007561F3 /* WikiLocationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB29BE42ADFD95F007561F3 /* Build configuration list for PBXNativeTarget "WikiLocationUITests" */;
+			buildPhases = (
+				DBB29BD02ADFD95F007561F3 /* Sources */,
+				DBB29BD12ADFD95F007561F3 /* Frameworks */,
+				DBB29BD22ADFD95F007561F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB29BD62ADFD95F007561F3 /* PBXTargetDependency */,
+			);
+			name = WikiLocationUITests;
+			productName = WikiLocationUITests;
+			productReference = DBB29BD42ADFD95F007561F3 /* WikiLocationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBB29BB22ADFD95C007561F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DBB29BB92ADFD95C007561F3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DBB29BC92ADFD95F007561F3 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DBB29BB92ADFD95C007561F3;
+					};
+					DBB29BD32ADFD95F007561F3 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DBB29BB92ADFD95C007561F3;
+					};
+				};
+			};
+			buildConfigurationList = DBB29BB52ADFD95C007561F3 /* Build configuration list for PBXProject "WikiLocation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBB29BB12ADFD95C007561F3;
+			productRefGroup = DBB29BBB2ADFD95C007561F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBB29BB92ADFD95C007561F3 /* WikiLocation */,
+				DBB29BC92ADFD95F007561F3 /* WikiLocationTests */,
+				DBB29BD32ADFD95F007561F3 /* WikiLocationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBB29BB82ADFD95C007561F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB29BC52ADFD95E007561F3 /* Preview Assets.xcassets in Resources */,
+				DBB29BC22ADFD95E007561F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB29BC82ADFD95F007561F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB29BD22ADFD95F007561F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBB29BB62ADFD95C007561F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB29BEE2ADFDB48007561F3 /* LocationItem.swift in Sources */,
+				DBA36E1B2AE53FB700573287 /* LocationManager.swift in Sources */,
+				DBA36E182AE53D7500573287 /* MapView.swift in Sources */,
+				DBA36E1D2AE541A300573287 /* RequestLocationView.swift in Sources */,
+				DBB29BF32ADFDD7C007561F3 /* DataParser.swift in Sources */,
+				DB314A652AE0504900C0B1BC /* LocationsRequest.swift in Sources */,
+				DBB29BC02ADFD95C007561F3 /* ContentView.swift in Sources */,
+				DBDE9BED2AE3CF820032C9CA /* LocationsViewViewModel.swift in Sources */,
+				DBB29BFC2ADFDF7E007561F3 /* RequestProtocol.swift in Sources */,
+				DBB29BF72ADFDEC7007561F3 /* NetworkError.swift in Sources */,
+				DB314A6B2AE054D000C0B1BC /* LocationRow.swift in Sources */,
+				DBB29BF02ADFDB5D007561F3 /* LocationContainer.swift in Sources */,
+				DBB29C002ADFE104007561F3 /* APIConstants.swift in Sources */,
+				DBB29BBE2ADFD95C007561F3 /* WikiLocationApp.swift in Sources */,
+				DB314A692AE054BC00C0B1BC /* LocationsView.swift in Sources */,
+				DB314A6D2AE056F200C0B1BC /* RequestManager.swift in Sources */,
+				DBB29BF92ADFDF03007561F3 /* APIManager.swift in Sources */,
+				DBB29BFE2ADFDFC4007561F3 /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB29BC62ADFD95F007561F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4DB96E2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift in Sources */,
+				DBB29BCF2ADFD95F007561F3 /* WikiLocationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB29BD02ADFD95F007561F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB29BD92ADFD95F007561F3 /* WikiLocationUITests.swift in Sources */,
+				DBB29BDB2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBB29BCC2ADFD95F007561F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB29BB92ADFD95C007561F3 /* WikiLocation */;
+			targetProxy = DBB29BCB2ADFD95F007561F3 /* PBXContainerItemProxy */;
+		};
+		DBB29BD62ADFD95F007561F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB29BB92ADFD95C007561F3 /* WikiLocation */;
+			targetProxy = DBB29BD52ADFD95F007561F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DBB29BDC2ADFD95F007561F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBB29BDD2ADFD95F007561F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBB29BDF2ADFD95F007561F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WikiLocation/Preview Content\"";
+				DEVELOPMENT_TEAM = 3EYJ9Q4F8W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WikiLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gill.work7.WikiLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBB29BE02ADFD95F007561F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WikiLocation/Preview Content\"";
+				DEVELOPMENT_TEAM = 3EYJ9Q4F8W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WikiLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gill.work7.WikiLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBB29BE22ADFD95F007561F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3EYJ9Q4F8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gill.work7.WikiLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiLocation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikiLocation";
+			};
+			name = Debug;
+		};
+		DBB29BE32ADFD95F007561F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3EYJ9Q4F8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gill.work7.WikiLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiLocation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikiLocation";
+			};
+			name = Release;
+		};
+		DBB29BE52ADFD95F007561F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3EYJ9Q4F8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gill.work7.WikiLocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiLocation;
+			};
+			name = Debug;
+		};
+		DBB29BE62ADFD95F007561F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3EYJ9Q4F8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gill.work7.WikiLocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiLocation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBB29BB52ADFD95C007561F3 /* Build configuration list for PBXProject "WikiLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB29BDC2ADFD95F007561F3 /* Debug */,
+				DBB29BDD2ADFD95F007561F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB29BDE2ADFD95F007561F3 /* Build configuration list for PBXNativeTarget "WikiLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB29BDF2ADFD95F007561F3 /* Debug */,
+				DBB29BE02ADFD95F007561F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB29BE12ADFD95F007561F3 /* Build configuration list for PBXNativeTarget "WikiLocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB29BE22ADFD95F007561F3 /* Debug */,
+				DBB29BE32ADFD95F007561F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB29BE42ADFD95F007561F3 /* Build configuration list for PBXNativeTarget "WikiLocationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB29BE52ADFD95F007561F3 /* Debug */,
+				DBB29BE62ADFD95F007561F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBB29BB22ADFD95C007561F3 /* Project object */;
+}
