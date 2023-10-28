@@ -25,6 +25,5 @@ final class ValidationDeepLinkUrlTest: XCTestCase {
         
         XCTAssertEqual(url.absoluteString, "wikipedia://places?WMFArticleURL=https://en.wikipedia.org/latitude=\(1.1)_longtitude=\(2.2)")
     }
-
 }
 

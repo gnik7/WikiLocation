@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject var locationManager = LocationManager()
-    
+
     var body: some View {
         NavigationView {
             LocationsView()
         }
         .navigationViewStyle(.stack)
-        .environmentObject(locationManager)
+        .environmentObject(LocationManager())
     }
 }
 

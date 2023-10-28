@@ -12,6 +12,10 @@
 		DB314A6B2AE054D000C0B1BC /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB314A6A2AE054D000C0B1BC /* LocationRow.swift */; };
 		DB314A6D2AE056F200C0B1BC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB314A6C2AE056F200C0B1BC /* RequestManager.swift */; };
 		DB4DB96E2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */; };
+		DB9508A72AECE6C6007BCA66 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = DB9508A62AECE6C6007BCA66 /* locations.json */; };
+		DB9508AA2AECE707007BCA66 /* DataLoadErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9508A92AECE706007BCA66 /* DataLoadErrorTests.swift */; };
+		DB9508AD2AECEAA2007BCA66 /* RequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9508AC2AECEAA2007BCA66 /* RequestHandlerTests.swift */; };
+		DB9508AF2AECF06F007BCA66 /* URLRequestCreateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9508AE2AECF06F007BCA66 /* URLRequestCreateTest.swift */; };
 		DBA36E182AE53D7500573287 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36E172AE53D7500573287 /* MapView.swift */; };
 		DBA36E1B2AE53FB700573287 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36E1A2AE53FB700573287 /* LocationManager.swift */; };
 		DBA36E1D2AE541A300573287 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA36E1C2AE541A300573287 /* RequestLocationView.swift */; };
@@ -19,7 +23,6 @@
 		DBB29BC02ADFD95C007561F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BBF2ADFD95C007561F3 /* ContentView.swift */; };
 		DBB29BC22ADFD95E007561F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB29BC12ADFD95E007561F3 /* Assets.xcassets */; };
 		DBB29BC52ADFD95E007561F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB29BC42ADFD95E007561F3 /* Preview Assets.xcassets */; };
-		DBB29BCF2ADFD95F007561F3 /* WikiLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BCE2ADFD95F007561F3 /* WikiLocationTests.swift */; };
 		DBB29BD92ADFD95F007561F3 /* WikiLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BD82ADFD95F007561F3 /* WikiLocationUITests.swift */; };
 		DBB29BDB2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BDA2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift */; };
 		DBB29BEE2ADFDB48007561F3 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB29BED2ADFDB48007561F3 /* LocationItem.swift */; };
@@ -56,6 +59,10 @@
 		DB314A6A2AE054D000C0B1BC /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
 		DB314A6C2AE056F200C0B1BC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationDeepLinkUrlTest.swift; sourceTree = "<group>"; };
+		DB9508A62AECE6C6007BCA66 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		DB9508A92AECE706007BCA66 /* DataLoadErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadErrorTests.swift; sourceTree = "<group>"; };
+		DB9508AC2AECEAA2007BCA66 /* RequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerTests.swift; sourceTree = "<group>"; };
+		DB9508AE2AECF06F007BCA66 /* URLRequestCreateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestCreateTest.swift; sourceTree = "<group>"; };
 		DBA36E172AE53D7500573287 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DBA36E192AE53DC100573287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DBA36E1A2AE53FB700573287 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -66,7 +73,6 @@
 		DBB29BC12ADFD95E007561F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB29BC42ADFD95E007561F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBB29BCA2ADFD95F007561F3 /* WikiLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBB29BCE2ADFD95F007561F3 /* WikiLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationTests.swift; sourceTree = "<group>"; };
 		DBB29BD42ADFD95F007561F3 /* WikiLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB29BD82ADFD95F007561F3 /* WikiLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationUITests.swift; sourceTree = "<group>"; };
 		DBB29BDA2ADFD95F007561F3 /* WikiLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -129,6 +135,39 @@
 				DBA36E162AE53D0C00573287 /* map */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		DB9508A52AECE6B9007BCA66 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				DB9508A62AECE6C6007BCA66 /* locations.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		DB9508A82AECE6F0007BCA66 /* DataLoadErrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB9508A92AECE706007BCA66 /* DataLoadErrorTests.swift */,
+			);
+			path = DataLoadErrorTests;
+			sourceTree = "<group>";
+		};
+		DB9508AB2AECEA94007BCA66 /* RequestHandlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB9508AC2AECEAA2007BCA66 /* RequestHandlerTests.swift */,
+				DB9508AE2AECF06F007BCA66 /* URLRequestCreateTest.swift */,
+			);
+			path = RequestHandlerTests;
+			sourceTree = "<group>";
+		};
+		DB9508B32AECFEFD007BCA66 /* ValidationDeepLinkUrlTest */ = {
+			isa = PBXGroup;
+			children = (
+				DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */,
+			);
+			path = ValidationDeepLinkUrlTest;
 			sourceTree = "<group>";
 		};
 		DBA36E152AE53D0500573287 /* main */ = {
@@ -195,8 +234,10 @@
 		DBB29BCD2ADFD95F007561F3 /* WikiLocationTests */ = {
 			isa = PBXGroup;
 			children = (
-				DBB29BCE2ADFD95F007561F3 /* WikiLocationTests.swift */,
-				DB4DB96D2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift */,
+				DB9508B32AECFEFD007BCA66 /* ValidationDeepLinkUrlTest */,
+				DB9508AB2AECEA94007BCA66 /* RequestHandlerTests */,
+				DB9508A82AECE6F0007BCA66 /* DataLoadErrorTests */,
+				DB9508A52AECE6B9007BCA66 /* JSON */,
 			);
 			path = WikiLocationTests;
 			sourceTree = "<group>";
@@ -405,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9508A72AECE6C6007BCA66 /* locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +490,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4DB96E2AE59A3200923C58 /* ValidationDeepLinkUrlTest.swift in Sources */,
-				DBB29BCF2ADFD95F007561F3 /* WikiLocationTests.swift in Sources */,
+				DB9508AA2AECE707007BCA66 /* DataLoadErrorTests.swift in Sources */,
+				DB9508AD2AECEAA2007BCA66 /* RequestHandlerTests.swift in Sources */,
+				DB9508AF2AECF06F007BCA66 /* URLRequestCreateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

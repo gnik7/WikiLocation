@@ -5,11 +5,15 @@
 //  Created by Nikita Gil on 22.10.2023.
 //
 
+import Foundation
+
 enum LocationsRequest: RequestProtocol {
     case loadLocations
     
     var path: String {
-        "/abnamrocoesd/assignment-ios/main/locations.json"
+        switch self {
+            case .loadLocations: return  "/abnamrocoesd/assignment-ios/main/locations.json"
+        }
     }
 
     var urlParams: [String: String?]? {
@@ -18,6 +22,10 @@ enum LocationsRequest: RequestProtocol {
 
     var requestType: RequestType {
         .GET
+    }
+    
+    private var parameters: [URLQueryItem] {
+        return []
     }
 }
 

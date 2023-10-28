@@ -29,10 +29,20 @@ struct LocationsView: View {
                 .onTapGesture {
                     if let name = location.name {
                         let url = viewModel.openLocation(name: name)
-                        openURL(url)
+                        openURL(url) { accepted in
+                            if !accepted {
+                                errorMessage = "Can not open"
+                                showingAlert.toggle()
+                            }
+                        }
                     } else {
                         let url = viewModel.openLocation(locationItem: location)
-                        openURL(url)
+                        openURL(url) { accepted in
+                            if !accepted {
+                                errorMessage = "Can not open"
+                                showingAlert.toggle()
+                            }
+                        }
                     }
                 }
             }
